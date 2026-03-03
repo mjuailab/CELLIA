@@ -77,7 +77,7 @@ pip install -r requirements.txt
 
 ---
 
-## Basic Usage
+## ⭐️ Basic Usage
 
 ### ► Command Line Usage
 After installing dependencies and creating an environment,
