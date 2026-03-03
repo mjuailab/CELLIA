@@ -85,7 +85,7 @@ you can run CELLIA in three ways:
 ```bash
 export API_KEY="YOUR_API_KEY"
 ```
-**A. Run full wrokflow (Step A--E)**
+**A. Run full wrokflow (Step A ~ E)**
 ```bash
 python run_cellia_web.py \
   --adata dataset/YourAnnData.h5ad \
@@ -102,8 +102,8 @@ Then open the web interface in your brower:
 http://localhost:port
 ```
 
-**B. LLM-based annotation workflow (Step A--D)**
-(i) Major cell type annotation
+**B. LLM-based annotation workflow (Step A ~ D)** \
+(i) Major cell type annotation 
 ```bash
 python run_cellia.py \
   --adata dataset/YourAnnData.h5ad \
@@ -113,9 +113,9 @@ python run_cellia.py \
   --api_key "YOUR_API_KEY" \
   --model "gemini-2.5-flash" \
   --mode "major"
-  ```
-
-(ii) Subtype-level cell type annotation
+```
+\
+(ii) Subtype-level cell type annotation 
 ```bash
 python run_cellia.py \
   --adata dataset/YourAnnData.h5ad \
@@ -127,7 +127,7 @@ python run_cellia.py \
   --model "gpt-4.1-2025-04-14" \
   --mode "subset" \
   --parent_celltype "Dendritic cells"
-  ```
+```
 
 **C. Interactive interface only** \
 Runs the CELLIA web interface using pre-computed results. \
