@@ -105,27 +105,37 @@ http://localhost:port
 #### II. LLM-based annotation workflow (Step A-D)
 **(a) Major cell type annotation**
 ```bash
-python run_cellia.py \
-  --adata dataset/YourAnnData.h5ad \
+python cellia_cli.py \
+  -i dataset/YourAnnData.h5ad \
+  -o dataset/CELLIA_annotation.h5ad \
   --tissue_db "lung" \
   --tissue_type "human lung tissue" \
-  --n_top_markers 15 \
   --api_key "YOUR_API_KEY" \
-  --model "gemini-2.5-flash" \
-  --mode "major"
+  --llm_provider gpt \
+  --model gpt-4.1-2025-04-14 \
+  --llm_mode major \
+  --db_mode db \
+  --deg_mode major \
+  --n_top_markers 15 \
+  --db_path ./database/Marker_DB.csv
 ```
 **(b) Subtype-level cell type annotation**
 ```bash
-python run_cellia.py \
-  --adata dataset/YourAnnData.h5ad \
+python cellia_cli.py \
+  --i dataset/YourAnnData.h5ad \
+  --o dataset/CELLIA_annotation.h5ad \
   --tissue_db "PBMC|blood" \
-  --subset_db "dendritic|DC" \
   --tissue_type "human PBMC" \
-  --n_top_markers 15 \
   --api_key "YOUR_API_KEY" \
-  --model "gpt-4.1-2025-04-14" \
-  --mode "subset" \
-  --parent_celltype "Dendritic cells"
+  --llm_provider gemini \
+  --model gemini-2.5-flash \
+  --llm_mode subset \
+  --parent_celltype "Dendritic cell" \
+  --deg_mode subset_db \
+  --subset_db "dendritic|DC" \
+  --deg_mode subset \
+  --n_top_markers 15 \
+  --db_path ./database/Marker_DB.csv
 ```
 
 #### III. Interactive interface only
@@ -143,12 +153,13 @@ import scanpy as sc
 adata = sc.read_h5ad("dataset/CRC.h5ad")
 
 adata = cellia_run(
-    adata,
-    tissue_db="crc|colon",
-    tissue_type="human colorectal cancer (CRC)",
-    api_key="YOUR_API_KEY,
-    n_top_markers=15,
-    model="gpt-4.1-2025-04-14"
+    adata=adata,
+    tissue_db="crc|colon",
+    tissue_type="human colorectal cancer (CRC)",
+    llm_provider="gpt",
+    api_key="YOUR_API_KEY",
+    model="gpt-4.1-2025-04-14",
+    n_top_markers=15,
 )
 ```
 ---
