@@ -116,8 +116,7 @@ python cellia_cli.py \
   --llm_mode major \
   --db_mode db \
   --deg_mode major \
-  --n_top_markers 15 \
-  --db_path ./database/Marker_DB.csv
+  --n_top_markers 15 
 ```
 **(b) Subtype-level cell type annotation**
 ```bash
@@ -134,8 +133,7 @@ python cellia_cli.py \
   --deg_mode subset_db \
   --subset_db "dendritic|DC" \
   --deg_mode subset \
-  --n_top_markers 15 \
-  --db_path ./database/Marker_DB.csv
+  --n_top_markers 15 
 ```
 
 #### III. Interactive interface only
