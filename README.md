@@ -85,7 +85,7 @@ you can run CELLIA in three ways:
 ```bash
 export API_KEY="YOUR_API_KEY"
 ```
-**A. Run full wrokflow (Step A-E)**
+**I. Run full wrokflow (Step A-E)**
 ```bash
 python run_cellia_web.py \
   --adata dataset/YourAnnData.h5ad \
@@ -102,8 +102,8 @@ Then open the web interface in your brower:
 http://localhost:port
 ```
 
-**B. LLM-based annotation workflow (Step A-D)** \
-- Major cell type annotation 
+**II. LLM-based annotation workflow (Step A-D)** \
+(a) Major cell type annotation 
 ```bash
 python run_cellia.py \
   --adata dataset/YourAnnData.h5ad \
@@ -114,7 +114,7 @@ python run_cellia.py \
   --model "gemini-2.5-flash" \
   --mode "major"
 ```
-- Subtype-level cell type annotation 
+(b) Subtype-level cell type annotation 
 ```bash
 python run_cellia.py \
   --adata dataset/YourAnnData.h5ad \
@@ -128,7 +128,7 @@ python run_cellia.py \
   --parent_celltype "Dendritic cells"
 ```
 
-**C. Interactive interface only** \
+**III. Interactive interface only** \
 Runs the CELLIA web interface using pre-computed results. \
 This requires that the input AnnData and {LLM}_explanations_db.json already follow the CELLIA annotation output format.
 ```bash
