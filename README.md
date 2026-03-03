@@ -85,7 +85,7 @@ you can run CELLIA in three ways:
 ```bash
 export API_KEY="YOUR_API_KEY"
 ```
-**A. Run full wrokflow (Step A ~ E)**
+**A. Run full wrokflow (Step A-E)**
 ```bash
 python run_cellia_web.py \
   --adata dataset/YourAnnData.h5ad \
@@ -102,8 +102,8 @@ Then open the web interface in your brower:
 http://localhost:port
 ```
 
-**B. LLM-based annotation workflow (Step A ~ D)** \
-(i) Major cell type annotation 
+**B. LLM-based annotation workflow (Step A-D)** \
+- Major cell type annotation 
 ```bash
 python run_cellia.py \
   --adata dataset/YourAnnData.h5ad \
@@ -114,8 +114,7 @@ python run_cellia.py \
   --model "gemini-2.5-flash" \
   --mode "major"
 ```
-\
-(ii) Subtype-level cell type annotation 
+- Subtype-level cell type annotation 
 ```bash
 python run_cellia.py \
   --adata dataset/YourAnnData.h5ad \
@@ -162,20 +161,20 @@ It shows the full CELLIA workflow with example data.
 
 ---
 
-## :computer: Output Example
+## 💻 Output Example
 
 ```json
 {
-    "1": {
-        "cell_type": "Liver sinusoidal endothelial cell (LSEC)",
-        "marker_explanations": {
-            "FCN3": "Strongly and selectively expressed in LSECs; important for immune functions in the liver vasculature.",
-            "CLEC4G": "Highly specific marker of human LSECs, mediating scavenger and cell adhesion roles.",
-            "CLEC4M": "Also known as L-SIGN, specifically marks LSECs in the liver.",
-            "LYVE1": "Expressed in liver sinusoidal endothelial cells involved in endocytic and scavenger functions.",
-            "FCN2": "Associated with LSEC immune surveillance functions."
-        }
-    },
+    "1": {
+        "cell_type": "Liver sinusoidal endothelial cell (LSEC)",
+        "marker_explanations": {
+            "FCN3": "Strongly and selectively expressed in LSECs; important for immune functions in the liver vasculature.",
+            "CLEC4G": "Highly specific marker of human LSECs, mediating scavenger and cell adhesion roles.",
+            "CLEC4M": "Also known as L-SIGN, specifically marks LSECs in the liver.",
+            "LYVE1": "Expressed in liver sinusoidal endothelial cells involved in endocytic and scavenger functions.",
+            "FCN2": "Associated with LSEC immune surveillance functions."
+        }
+    },
 }
 ```
 
