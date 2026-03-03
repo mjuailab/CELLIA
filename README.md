@@ -55,7 +55,7 @@ cd CELLIA
 # Option A: If you have Conda installed (recommended)
 # ---------------------------------------------------------
 # Create and activate a Conda environment
-conda create -n cellia_env python=3.9 -y
+conda create -n cellia_env python=3.11 -y
 source ~/.bashrc     # If you need
 conda activate cellia_env
 
@@ -73,11 +73,11 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-> Recommended: Python ≥ 3.9 with Scanpy and Clustered AnnData
+> Recommended: Python ≥ 3.11 with Scanpy and Clustered AnnData
 
 ---
 
-## :speaking_head_in_silhouette: Basic Usage
+## Basic Usage
 
 ### ► Command Line Usage
 After installing dependencies and creating an environment,
@@ -85,19 +85,49 @@ you can run CELLIA in three ways:
 ```bash
 export API_KEY="YOUR_API_KEY"
 ```
-**A. Full wrokflow (LLM-based annotation + web interface)**
+**A. Run full wrokflow (Step A--E)**
 ```bash
-python run_cellia_web.py
+python run_cellia_web.py \
+  --adata dataset/YourAnnData.h5ad \
+  --tissue_db "PBMC|blood" \
+  --tissue_type "human PBMCs" \
+  --n_top_markers 15 \
+  --api_key "YOUR_API_KEY" \
+  --model "gpt-4.1-2025-04-14" \
+  --port 8060 \
+  --rationale_json cellia_output/gpt_explanations_db.json
 ```
 Then open the web interface in your brower:
 ```text
 http://localhost:port
 ```
 
-**B. LLM-based annotation only**
+**B. LLM-based annotation workflow (Step A--D)**
+(i) Major cell type annotation
 ```bash
-python run_cellia.py
-```
+python run_cellia.py \
+  --adata dataset/YourAnnData.h5ad \
+  --tissue_db "lung" \
+  --tissue_type "human lung tissue" \
+  --n_top_markers 15 \
+  --api_key "YOUR_API_KEY" \
+  --model "gemini-2.5-flash" \
+  --mode "major"
+  ```
+
+(ii) Subtype-level cell type annotation
+```bash
+python run_cellia.py \
+  --adata dataset/YourAnnData.h5ad \
+  --tissue_db "PBMC|blood" \
+  --subset_db "dendritic|DC" \
+  --tissue_type "human PBMC" \
+  --n_top_markers 15 \
+  --api_key "YOUR_API_KEY" \
+  --model "gpt-4.1-2025-04-14" \
+  --mode "subset" \
+  --parent_celltype "Dendritic cells"
+  ```
 
 **C. Interactive interface only** \
 Runs the CELLIA web interface using pre-computed results. \
@@ -132,36 +162,6 @@ It shows the full CELLIA workflow with example data.
 
 ---
 
-## Advanced usage (override defaults via CLI arguments)
-
-You can override the default settings using command-line arguments.
-
-**Run full workflow (annotation + web):**
-```bash
-python run_cellia_web.py \
-  --adata dataset/YourAnnData.h5ad \
-  --tissue_db "PBMC|blood" \
-  --tissue_type "human PBMCs" \
-  --n_top_markers 20 \
-  --api_key "YOUR_API_KEY" \
-  --model "claude-sonnet-4-5" \
-  --port 8060 \
-  --rationale_json cellia_output/gpt_explanations_db.json
-```
-
-**Run annotation only:**
-```bash
-python run_cellia.py \
-  --adata dataset/YourAnnData.h5ad \
-  --tissue_db "lung" \
-  --tissue_type "human lung tissue" \
-  --n_top_markers 10 \
-  --api_key "YOUR_API_KEY" \
-  --model "models/gemini-2.5-flash-lite"
-  ```
-
----
-
 ## :computer: Output Example
 
 ```json
@@ -174,9 +174,7 @@ python run_cellia.py \
             "CLEC4M": "Also known as L-SIGN, specifically marks LSECs in the liver.",
             "LYVE1": "Expressed in liver sinusoidal endothelial cells involved in endocytic and scavenger functions.",
             "FCN2": "Associated with LSEC immune surveillance functions."
-        },
-        "evidence_score": 0.95,
-        "evidence_reason": "Multiple highly specific and well-validated LSEC markers present, especially CLEC4G, CLEC4M, and FCN3, which are signature genes for liver sinusoidal endothelial cells."
+        }
     },
 }
 ```
@@ -192,7 +190,6 @@ If you use **CELLIA** in your work, please cite:
 ## :mailbox_with_mail: Contact
 
 **Author:** Jiyeong Shin \
-**GitHub:** [ssjiyeong](https://github.com/ssjiyeong) \
 **Email:** sssjiyeong@gmail.com
 
 ---
