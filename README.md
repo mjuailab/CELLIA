@@ -85,24 +85,8 @@ you can run CELLIA in three ways:
 ```bash
 export API_KEY="YOUR_API_KEY"
 ```
-#### I. Run full wrokflow (Step A-E)
-```bash
-python run_cellia_web.py \
-  --adata dataset/YourAnnData.h5ad \
-  --tissue_db "PBMC|blood" \
-  --tissue_type "human PBMCs" \
-  --n_top_markers 15 \
-  --api_key "YOUR_API_KEY" \
-  --model "gpt-4.1-2025-04-14" \
-  --port 8060 \
-  --rationale_json cellia_output/gpt_explanations_db.json
-```
-Then open the web interface in your brower:
-```text
-http://localhost:port
-```
 
-#### II. LLM-based annotation workflow (Step A-D)
+#### I. LLM-based annotation workflow (Step A-D)
 **(a) Major cell type annotation**
 ```bash
 python cellia_cli.py \
@@ -121,8 +105,8 @@ python cellia_cli.py \
 **(b) Subtype-level cell type annotation**
 ```bash
 python cellia_cli.py \
-  --i dataset/YourAnnData.h5ad \
-  --o dataset/CELLIA_annotation.h5ad \
+  -i dataset/YourAnnData.h5ad \
+  -o dataset/CELLIA_annotation.h5ad \
   --tissue_db "PBMC|blood" \
   --tissue_type "human PBMC" \
   --api_key "YOUR_API_KEY" \
@@ -130,10 +114,24 @@ python cellia_cli.py \
   --model gemini-2.5-flash \
   --llm_mode subset \
   --parent_celltype "Dendritic cell" \
-  --deg_mode subset_db \
-  --subset_db "dendritic|DC" \
   --deg_mode subset \
+  --db_mode subset_db \
+  --subset_db "dendritic|DC" \
   --n_top_markers 15 
+```
+
+#### II. Run full wrokflow (Step A-E)
+After running **I. LLM-based annotation workflow (Step A-D)**
+```bash
+python cellia_web_cli.py \
+  -i dataset/Completed_CELLIA_annotation.h5ad \
+  --rationale cellia_output/gpt_explanations_major.json \ 
+  --port 8051
+```
+
+Then open the web interface in your brower:
+```text
+http://localhost:port
 ```
 
 #### III. Interactive interface only
