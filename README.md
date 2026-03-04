@@ -81,7 +81,7 @@ pip install -r requirements.txt
 
 ### ► Command Line Usage
 After installing dependencies and creating an environment,
-you can run CELLIA in three ways:
+you can run CELLIA in two ways:
 ```bash
 export API_KEY="YOUR_API_KEY"
 ```
@@ -132,31 +132,6 @@ python cellia_web_cli.py \
 Then open the web interface in your brower:
 ```text
 http://localhost:port
-```
-
-#### III. Interactive interface only
-Runs the CELLIA web interface using pre-computed results. This requires that the input AnnData and {LLM}_explanations_db.json already follow the CELLIA annotation output format.
-```bash
-python run_cellia_web_only.py
-```
-
-### ► Python script / Jupyter notebooks Usage
-
-```python
-from cellia import *
-import scanpy as sc
-
-adata = sc.read_h5ad("dataset/CRC.h5ad")
-
-adata = cellia_run(
-    adata=adata,
-    tissue_db="crc|colon",
-    tissue_type="human colorectal cancer (CRC)",
-    llm_provider="gpt",
-    api_key="YOUR_API_KEY",
-    model="gpt-4.1-2025-04-14",
-    n_top_markers=15,
-)
 ```
 ---
 
