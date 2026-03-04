@@ -27,8 +27,8 @@ CELLIA/
 ├── cellia.py               # Core workflow
 ├── cellia_web.py           # Web interface
 │
-├── run_cellia.py           # Script to run LLM-based annotation only
-├── run_cellia_web.py       # Script to run full workflow (annotation + web)
+├── celli_cli.py            # Script to run LLM-based annotation only
+├── cellia_web_cli.py       # Script to run full workflow (annotation + web)
 ├── cellia_tutorial.ipynb   # Tutorial to CELLIA workflow
 │
 ├── cellia_output/          # CELLIA annotation results (JSON / CSV)
