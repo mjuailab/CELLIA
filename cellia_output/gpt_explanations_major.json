@@ -1,0 +1,67 @@
+{
+    "1": {
+        "cell_type": "Plasma cell",
+        "marker_explanations": {
+            "MZB1": "Highly expressed in plasma cells, involved in antibody secretion.",
+            "JCHAIN": "Essential for IgA and IgM polymerization, specific to plasma cells.",
+            "SDC1": "Also known as CD138, a canonical plasma cell surface marker.",
+            "SLAMF7": "Expressed on plasma cells and used to distinguish them from other B cells.",
+            "CD38": "Highly expressed on plasma cells, used as a diagnostic marker."
+        }
+    },
+    "2": {
+        "cell_type": "Epithelial tumor cell (cancer cell)",
+        "marker_explanations": {
+            "EPCAM": "A pan-epithelial marker highly expressed in epithelial and carcinoma cells.",
+            "PROM1": "Also known as CD133, a marker of cancer stem cells in colorectal cancer.",
+            "MUC13": "A mucin gene upregulated in colorectal adenocarcinoma epithelial cells.",
+            "SPINK1": "Overexpressed in various cancers, including colorectal cancer epithelial cells.",
+            "S100P": "Frequently upregulated in colorectal cancer and associated with tumor progression.",
+            "CD24": "A cell surface marker enriched in colorectal cancer stem and epithelial cells."
+        }
+    },
+    "3": {
+        "cell_type": "Mast cell",
+        "marker_explanations": {
+            "CPA3": "Carboxypeptidase A3 is a classic mast cell-specific protease.",
+            "HPGDS": "Hematopoietic prostaglandin D synthase is highly expressed in mast cells.",
+            "IL1RL1": "Also known as ST2, a receptor expressed on mast cells.",
+            "GATA2": "Transcription factor essential for mast cell development.",
+            "LTC4S": "Leukotriene C4 synthase is involved in mast cell mediator synthesis.",
+            "RGS13": "Regulator of G-protein signaling enriched in mast cells."
+        }
+    },
+    "4": {
+        "cell_type": "Macrophage",
+        "marker_explanations": {
+            "CSF1R": "Key receptor for macrophage colony-stimulating factor, highly expressed in macrophages.",
+            "CD14": "Co-receptor for LPS, classic monocyte/macrophage marker.",
+            "C1QA": "Complement component highly expressed in tissue macrophages.",
+            "AIF1": "Also known as IBA1, a microglia/macrophage marker.",
+            "FCGR3A": "Fc gamma receptor III, expressed in monocytes/macrophages.",
+            "TREM1": "Amplifies inflammatory responses in myeloid cells, including macrophages."
+        }
+    },
+    "5": {
+        "cell_type": "Fibroblast",
+        "marker_explanations": {
+            "PDGFRA": "Classical marker of fibroblasts, especially in colorectal cancer stroma.",
+            "COL3A1": "Encodes type III collagen, highly expressed in fibroblasts and extracellular matrix-producing cells.",
+            "ADH1B": "Frequently marks fibroblasts in colorectal and other tissues.",
+            "PDGFRB": "Another key fibroblast marker, often co-expressed with PDGFRA in stromal cells.",
+            "PRELP": "Extracellular matrix protein, enriched in fibroblasts.",
+            "FRZB": "Wnt signaling modulator, expressed in fibroblasts within tumor stroma."
+        }
+    },
+    "6": {
+        "cell_type": "CD8+ T cell",
+        "marker_explanations": {
+            "CD8A": "Encodes the CD8 alpha chain, a definitive marker of CD8+ cytotoxic T cells.",
+            "GZMA": "Granzyme A is a cytotoxic molecule expressed by activated CD8+ T cells.",
+            "CD2": "A pan-T cell marker, present on all T cells including CD8+ subsets.",
+            "CD247": "Part of the T cell receptor-CD3 complex, essential for T cell activation.",
+            "TIGIT": "An inhibitory receptor commonly expressed on activated and exhausted CD8+ T cells.",
+            "ICOS": "A co-stimulatory molecule upregulated on activated T cells, including CD8+ subsets."
+        }
+    }
+}

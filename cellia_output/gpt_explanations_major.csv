@@ -1,0 +1,36 @@
+cluster,cell_type,gene,explanation
+1,Plasma cell,MZB1,"Highly expressed in plasma cells, involved in antibody secretion."
+1,Plasma cell,JCHAIN,"Essential for IgA and IgM polymerization, specific to plasma cells."
+1,Plasma cell,SDC1,"Also known as CD138, a canonical plasma cell surface marker."
+1,Plasma cell,SLAMF7,Expressed on plasma cells and used to distinguish them from other B cells.
+1,Plasma cell,CD38,"Highly expressed on plasma cells, used as a diagnostic marker."
+2,Epithelial tumor cell (cancer cell),EPCAM,A pan-epithelial marker highly expressed in epithelial and carcinoma cells.
+2,Epithelial tumor cell (cancer cell),PROM1,"Also known as CD133, a marker of cancer stem cells in colorectal cancer."
+2,Epithelial tumor cell (cancer cell),MUC13,A mucin gene upregulated in colorectal adenocarcinoma epithelial cells.
+2,Epithelial tumor cell (cancer cell),SPINK1,"Overexpressed in various cancers, including colorectal cancer epithelial cells."
+2,Epithelial tumor cell (cancer cell),S100P,Frequently upregulated in colorectal cancer and associated with tumor progression.
+2,Epithelial tumor cell (cancer cell),CD24,A cell surface marker enriched in colorectal cancer stem and epithelial cells.
+3,Mast cell,CPA3,Carboxypeptidase A3 is a classic mast cell-specific protease.
+3,Mast cell,HPGDS,Hematopoietic prostaglandin D synthase is highly expressed in mast cells.
+3,Mast cell,IL1RL1,"Also known as ST2, a receptor expressed on mast cells."
+3,Mast cell,GATA2,Transcription factor essential for mast cell development.
+3,Mast cell,LTC4S,Leukotriene C4 synthase is involved in mast cell mediator synthesis.
+3,Mast cell,RGS13,Regulator of G-protein signaling enriched in mast cells.
+4,Macrophage,CSF1R,"Key receptor for macrophage colony-stimulating factor, highly expressed in macrophages."
+4,Macrophage,CD14,"Co-receptor for LPS, classic monocyte/macrophage marker."
+4,Macrophage,C1QA,Complement component highly expressed in tissue macrophages.
+4,Macrophage,AIF1,"Also known as IBA1, a microglia/macrophage marker."
+4,Macrophage,FCGR3A,"Fc gamma receptor III, expressed in monocytes/macrophages."
+4,Macrophage,TREM1,"Amplifies inflammatory responses in myeloid cells, including macrophages."
+5,Fibroblast,PDGFRA,"Classical marker of fibroblasts, especially in colorectal cancer stroma."
+5,Fibroblast,COL3A1,"Encodes type III collagen, highly expressed in fibroblasts and extracellular matrix-producing cells."
+5,Fibroblast,ADH1B,Frequently marks fibroblasts in colorectal and other tissues.
+5,Fibroblast,PDGFRB,"Another key fibroblast marker, often co-expressed with PDGFRA in stromal cells."
+5,Fibroblast,PRELP,"Extracellular matrix protein, enriched in fibroblasts."
+5,Fibroblast,FRZB,"Wnt signaling modulator, expressed in fibroblasts within tumor stroma."
+6,CD8+ T cell,CD8A,"Encodes the CD8 alpha chain, a definitive marker of CD8+ cytotoxic T cells."
+6,CD8+ T cell,GZMA,Granzyme A is a cytotoxic molecule expressed by activated CD8+ T cells.
+6,CD8+ T cell,CD2,"A pan-T cell marker, present on all T cells including CD8+ subsets."
+6,CD8+ T cell,CD247,"Part of the T cell receptor-CD3 complex, essential for T cell activation."
+6,CD8+ T cell,TIGIT,An inhibitory receptor commonly expressed on activated and exhausted CD8+ T cells.
+6,CD8+ T cell,ICOS,"A co-stimulatory molecule upregulated on activated T cells, including CD8+ subsets."

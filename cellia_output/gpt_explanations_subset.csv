@@ -1,0 +1,47 @@
+cluster,cell_type,gene,explanation
+1,Plasmacytoid dendritic cell (pDC),IL3RA,IL3RA (CD123) is a canonical marker for human pDCs in PBMCs.
+1,Plasmacytoid dendritic cell (pDC),TCF4,TCF4 (E2-2) is a transcription factor essential for pDC development and identity.
+1,Plasmacytoid dendritic cell (pDC),LILRA4,LILRA4 (ILT7) is highly specific for pDCs among PBMC dendritic cells.
+1,Plasmacytoid dendritic cell (pDC),CLEC4C,CLEC4C (BDCA-2) is a classic surface marker for human pDCs.
+1,Plasmacytoid dendritic cell (pDC),SPIB,SPIB is a transcription factor critical for pDC lineage specification.
+1,Plasmacytoid dendritic cell (pDC),IRF7,"IRF7 is highly expressed in pDCs, reflecting their role in type I interferon production."
+1,Plasmacytoid dendritic cell (pDC),JCHAIN,JCHAIN is often upregulated in activated or mature pDCs.
+1,Plasmacytoid dendritic cell (pDC),MZB1,MZB1 is associated with pDC activation and function.
+2,cDC1 (conventional dendritic cell type 1),XCR1,"Highly specific marker for human cDC1 subset in PBMC, distinguishing them from other DCs."
+2,cDC1 (conventional dendritic cell type 1),CLEC9A,"Selective for cDC1, involved in antigen cross-presentation, rarely expressed in other DC subsets."
+2,cDC1 (conventional dendritic cell type 1),CADM1,"Expressed on cDC1, used to identify and isolate this subset in human blood."
+2,cDC1 (conventional dendritic cell type 1),BATF3,Transcription factor essential for cDC1 development and maintenance.
+2,cDC1 (conventional dendritic cell type 1),ID2,Transcriptional regulator required for cDC1 lineage specification.
+2,cDC1 (conventional dendritic cell type 1),CD226,"Expressed on cDC1, supporting their identification among DCs."
+2,cDC1 (conventional dendritic cell type 1),CLNK,Associated with cDC1 signaling pathways.
+2,cDC1 (conventional dendritic cell type 1),IDO1,"Can be upregulated in activated cDC1, though not exclusive."
+2,cDC1 (conventional dendritic cell type 1),CCND1,"Cell cycle gene, may indicate proliferation but not subset-defining."
+2,cDC1 (conventional dendritic cell type 1),C1orf54,"Limited data, but reported in cDC1 transcriptomes."
+2,cDC1 (conventional dendritic cell type 1),RAB7B,"Expressed in cDC1, involved in endosomal trafficking."
+2,cDC1 (conventional dendritic cell type 1),SNX22,"Enriched in cDC1, supports subset identity."
+2,cDC1 (conventional dendritic cell type 1),SLAMF8,"Expressed in cDC1, though also in other myeloid cells."
+2,cDC1 (conventional dendritic cell type 1),GCSAM,"Reported in cDC1, though not exclusive."
+2,cDC1 (conventional dendritic cell type 1),ANPEP,"Broadly myeloid, less specific but present in cDC1."
+3,CD1c+ conventional dendritic cell (cDC2),CD1C,Defining marker of cDC2 (CD1c+ dendritic cells) in human blood.
+3,CD1c+ conventional dendritic cell (cDC2),CD1E,"Associated with CD1c+ DCs, involved in lipid antigen presentation."
+3,CD1c+ conventional dendritic cell (cDC2),FCER1A,"Highly expressed in cDC2, distinguishing them from cDC1 and monocytes."
+3,CD1c+ conventional dendritic cell (cDC2),CLEC10A,"Selective marker for cDC2, involved in glycan recognition."
+3,CD1c+ conventional dendritic cell (cDC2),ITGAX,"Encodes CD11c, broadly marks dendritic cells but is high in cDC2."
+3,CD1c+ conventional dendritic cell (cDC2),CD33,"Expressed in myeloid lineage cells, including cDC2."
+3,CD1c+ conventional dendritic cell (cDC2),CLEC4A,"Expressed in cDC2, helps distinguish from cDC1."
+3,CD1c+ conventional dendritic cell (cDC2),LST1,"Expressed in myeloid cells, including cDC2."
+3,CD1c+ conventional dendritic cell (cDC2),S100A8,"Low to moderate in cDC2, higher in monocytes but can be present in activated cDC2."
+3,CD1c+ conventional dendritic cell (cDC2),S100A9,"Similar to S100A8, can be upregulated in activated cDC2."
+3,CD1c+ conventional dendritic cell (cDC2),SERPINA1,"Expressed in myeloid cells, including cDC2."
+3,CD1c+ conventional dendritic cell (cDC2),CD14,"Primarily monocyte marker, but low expression can be seen in some cDC2 subsets."
+3,CD1c+ conventional dendritic cell (cDC2),CST7,"Expressed in myeloid cells, including cDC2."
+3,CD1c+ conventional dendritic cell (cDC2),ENTPD1,"Can be expressed in activated myeloid cells, including cDC2."
+3,CD1c+ conventional dendritic cell (cDC2),CLEC12A,"Expressed in myeloid cells, including cDC2."
+4,Plasmacytoid dendritic cell (pDC),LILRA4,"Highly specific marker for human pDCs, distinguishing them from other DC subsets."
+4,Plasmacytoid dendritic cell (pDC),IL3RA,"Encodes CD123, a canonical surface marker for pDCs in PBMC."
+4,Plasmacytoid dendritic cell (pDC),TCF4,Transcription factor essential for pDC development and identity.
+4,Plasmacytoid dendritic cell (pDC),SPIB,"Transcription factor enriched in pDCs, involved in their differentiation."
+4,Plasmacytoid dendritic cell (pDC),IRF4,Expressed in pDCs and involved in their function; also seen in some conventional DCs but supports pDC identity in this context.
+4,Plasmacytoid dendritic cell (pDC),SIGLEC6,Expressed in pDCs and can help distinguish them from other DCs.
+4,Plasmacytoid dendritic cell (pDC),CLEC4A,"Also known as BDCA-2, a classic pDC marker."
+4,Plasmacytoid dendritic cell (pDC),CD7,"Expressed in pDCs, though not exclusive, supports the annotation."

@@ -1,0 +1,18 @@
+{
+    "1": {
+        "cell_type": "Plasmacytoid dendritic cell (pDC)",
+        "markers": "GZMB, PTCRA, JCHAIN, MZB1, PTPRS, IRF7, ITM2C, TLR7, NRP1, IL3RA, TCF4, LILRA4, CLEC4C, SPIB, SERPINF1"
+    },
+    "2": {
+        "cell_type": "cDC1 (conventional dendritic cell type 1)",
+        "markers": "XCR1, CADM1, CLEC9A, IDO1, CCND1, CLNK, C1orf54, RAB7B, SNX22, SLAMF8, GCSAM, BATF3, CD226, ANPEP, ID2"
+    },
+    "3": {
+        "cell_type": "CD1c+ conventional dendritic cell (cDC2)",
+        "markers": "CD1C, CD1E, SERPINA1, S100A9, FCER1A, CD14, S100A8, CLEC10A, ITGAX, CD33, LST1, CLEC4A, CST7, ENTPD1, CLEC12A"
+    },
+    "4": {
+        "cell_type": "Plasmacytoid dendritic cell (pDC)",
+        "markers": "AXL, SIGLEC6, CXCR2, PLAC8, PROC, LILRA4, TCF4, IRF4, CD7, IL3RA, GPR183, SPIB, CLEC4A, SLAMF7, ITM2C"
+    }
+}
