@@ -165,12 +165,28 @@ It shows the full CELLIA workflow with example data.
 
 If you use **CELLIA** in your work, please cite:
 
+> Shin, J., Jeong, S., Kim, H. J., & Oh, M. (2026).  
+> **Integrative evidence-knowledge marker selection enhances LLM-based cell type annotation in single-cell RNA-seq analysis.**  
+> *BioData Mining*.  
+> https://doi.org/10.1186/s13040-026-00593-7
+
+```bibtex
+@article{shin2026integrative,
+  title     = {Integrative evidence-knowledge marker selection enhances LLM-based cell type annotation in single-cell RNA-seq analysis},
+  author    = {Shin, Jiyeong and Jeong, Soyoung and Kim, Hyun Je and Oh, Minsik},
+  journal   = {BioData Mining},
+  year      = {2026},
+  doi       = {10.1186/s13040-026-00593-7},
+  publisher = {Springer}
+}
+
 ---
 
 ## :mailbox_with_mail: Contact
 
 **Author:** Jiyeong Shin \
-**Email:** sssjiyeong@gmail.com
+**Institutional Email:** tlswl313@mju.ac.kr  
+**Personal Email:** sssjiyeong@gmail.com
 
 ---
 
